@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="utf-8">
+	<title>Alixon - Login</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">	
+	<link href="./css/styles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+	
+	<script>
+        function mostrarContrasena(){
+            var x = document.getElementById("pass");
+            if(x.type == "password"){
+                x.type = "text";
+            }else{
+                x.type = "password";
+            }
+        }
+    </script>
+
+</head>
+	
+<body>
+	<div class="container2" >
+		<section class="proy2"  id="proy2">
+			<div class="overlay2">
+				
+				<a class="btn btn-primary" href="./Home.html" role="button">
+                <i class="fa fa-home"></i></a>
+			
+			<div class="container-grid">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-12 info-contact" href="./Home.html">
+                        <img src="./assets/1632184721717.jpg" width="300" height="300" alt="">
+                    </div> 
+					
+                    <div class="col-lg-7 col-sm-10 container-form">
+					
+					<div class="card col-md-7 mx-auto mt-4">
+					<div class="form-control">
+
+						<form name=login action="./Main.html">
+
+							<div class="form-control">
+     						<label for="username"><b>Usuario</b></label>
+      						<input type="text" placeholder="Usuario" name="username" required>
+
+     						<label for="passsword"><b>Contraseña</b></label>
+      						<input type="password" placeholder="Contraseña" name="password" required>
+        					<span class="psw">Recuperar <a href="./Recovery.html">Contraseña</a></span>
+								
+							<label>
+        					<input type="checkbox" checked="checked" name="remember"> Remember me
+     						</label>
+								
+      						<button type="submit">Iniciar sesión</button>
+							</div>
+							<span class="rgt">¿No tiene una cuenta? <a href="./Registro.html">Registrese</a></span>
+						</form>
+						
+					</div>
+                </div>
+			 </div>
+			</div> 
+			</div>
+		</div>
+	 	</section>
+		<div class="copyright">&copy;2021-G5-82</div>			
+	</div>
+
+	
+	
+	
+	
+</body>
+</html>
